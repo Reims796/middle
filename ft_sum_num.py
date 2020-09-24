@@ -5,5 +5,3 @@ def ft_sum_num(a):
         a //= 10
     return b
 
-
-print(ft_sum_num(223))
