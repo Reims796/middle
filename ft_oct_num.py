@@ -1,8 +1,8 @@
 def ft_oct_num(a):
     b = 1
-    d = 0
+    c = 0
     while a > 0:
-        d += a % 8 * b
+        c += a % 8 * b
         b *= 10
         a //= 8
-    return d
+    return c
