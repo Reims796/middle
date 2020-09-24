@@ -1,19 +1,13 @@
-def ft_rev_num(a):
-    b = a
-    c = 0
-    if a < 0:
-        a = -a
-        while a > 0:
-            d = a % 10
-            c = c * 10 + d
-            a //= 10
-        return -c
-
-    while a > 0:
-        d = a % 10
-        c = c * 10 + d
-        a //= 10
-    return c
-
-
-
+def ft_rev_num(number):
+    r = 0
+    if number > 0:
+        while number > 0:
+            r = (r * 10) + (number % 10)
+            number = number // 10
+        return r
+    else:
+        number *= -1
+        while number > 0:
+            r = (r * 10) + (number % 10)
+            number = number // 10
+        return -r
